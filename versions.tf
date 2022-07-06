@@ -6,7 +6,3 @@ terraform {
     }
   }
 }
-
-provider "ibm" {
-  # Configuration options
-}
