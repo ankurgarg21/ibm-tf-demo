@@ -26,6 +26,17 @@ Follow the instructions to make sure that you are assigned the required permissi
 Install the Terraform on IBM Cloud command line and the IBM Cloud Provider plug-in.
 If you do not have one, create an IBM Cloud API key.
 
+## tfvars file
+Create a variables file that is named terraform.tfvars and specify the IBM Cloud API key that you retrieved. In addition, you specify the region where you want your IBM Cloud resources to be created. If no region is specified, Terraform on IBM Cloud automatically creates your resources in the us-south region. Variables that are defined in the terraform.tfvars file are automatically loaded by Terraform when the IBM Cloud Provider plug-in is initialized and you can reference them in every Terraform configuration file that you use.
+
+## note
+Because the terraform.tfvars file contains confidential information, do not push this file to a version control system. This file is meant to be on your local system only.
+
+# Example of terraform.tfvarsfile
+```
+ibmcloud_api_key = "<ibmcloud_api_key>"
+region = "<region>"
+```
 ## Initialize the Terraform on IBM Cloud CLI.
 ```
 terraform init
