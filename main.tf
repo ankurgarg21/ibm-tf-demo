@@ -1,8 +1,8 @@
 data ibm_resource_group "resource_group" {
-    name = "default"
+    name = "Default"
 }
 resource ibm_container_cluster "tfcluster" {
-name            = "tfclusterdoc"
+name            = "sampletfcluster"
 datacenter      = "dal10"
 machine_type    = "b3c.4x16"
 hardware        = "shared"
