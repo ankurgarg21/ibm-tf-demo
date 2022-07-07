@@ -13,7 +13,7 @@ terraform {
      skip_region_validation = true
      skip_credentials_validation = true
      skip_metadata_api_check = true
-     endpoint = "s3.jp-tok.cloud-object-storage.appdomain.cloud"
+     endpoint = "s3.us-south.cloud-object-storage.appdomain.cloud"
      access_key = "var.cos_access_key"
      secret_key = "var.cos_secret_key"   
   }
